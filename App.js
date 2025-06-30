@@ -1,8 +1,8 @@
 // index.js or main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import TextAnalyzer from "./features/TextAnalyzer";
-import Home from "./components/Home";
+import TextAnalyzer from "./src/features/TextAnalyzer";
+import Home from "./src/components/Home";
 import { createBrowserRouter,Outlet,Router, RouterProvider } from "react-router";
 const App = () => {
   return (
