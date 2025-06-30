@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/cartikeya/Skillswap-codeforbharat#readme",
   "dependencies": {
+    "@google/genai": "^1.6.0",
     "@tailwindcss/postcss": "^4.1.10",
     "firebase": "^11.9.1",
     "react": "^19.1.0",

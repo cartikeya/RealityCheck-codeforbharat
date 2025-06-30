@@ -1,15 +1,31 @@
-import React, { useState } from 'react';
-import Login from './Login';
-import Dashboard from './Dashboard';
-
-function App() {
-  const [user, setUser] = useState(null);
-
+// index.js or main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import TextAnalyzer from "./features/TextAnalyzer";
+import Home from "./components/Home";
+import { createBrowserRouter,Outlet,Router, RouterProvider } from "react-router";
+const App = () => {
   return (
-    <div>
-      {user ? <Dashboard user={user} /> : <Login setUser={setUser} />}
+    <div className="logo">
+      {/* <h1 className="text-2xl font-bold">RealityCheck</h1> */}
+      {/* Your main component goes here */}
+      <Outlet/>
+      
     </div>
   );
-}
+};
 
-export default App;
+const appRouter = createBrowserRouter([
+  {
+    path:"/",
+    element:<Home/>,
+  },
+  {
+    path:"/realAI",
+    element:<TextAnalyzer/>
+  }
+])
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter}/>);
