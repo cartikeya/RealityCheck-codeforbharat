@@ -7,6 +7,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "source":"index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cartikeya/Skillswap-codeforbharat.git"
