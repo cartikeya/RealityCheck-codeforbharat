@@ -17,15 +17,20 @@ const App = () => {
 
 const appRouter = createBrowserRouter([
   {
-    path:"/",
-    element:<Home/>,
+    path: "/",
+    element: <App />, // 👈 Use App as layout
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "realAI",
+        element: <TextAnalyzer />,
+      },
+    ],
   },
-  {
-    path:"/realAI",
-    element:<TextAnalyzer/>
-  }
-])
-
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter}/>);
