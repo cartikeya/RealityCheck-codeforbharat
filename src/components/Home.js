@@ -40,11 +40,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
-//   <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-3xl space-y-6">
-//     <div className="space-y-4">
-
-//     </div>
-//   </div>
-// </div>;

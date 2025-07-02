@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import TextAnalyzer from "./src/features/TextAnalyzer";
 import Home from "./src/components/Home";
-import { createBrowserRouter,Outlet,Router, RouterProvider } from "react-router";
+import { createBrowserRouter,Outlet, RouterProvider } from "react-router";
 const App = () => {
   return (
     <div className="logo">
